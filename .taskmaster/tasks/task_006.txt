@@ -1,0 +1,25 @@
+# Task ID: 6
+# Title: Public Website - Services Page
+# Status: pending
+# Dependencies: 1
+# Priority: medium
+# Description: Create detailed services page listing all IT solution offerings
+# Details:
+Build comprehensive services page with modern design and animations
+
+# Test Strategy:
+Verify service information accuracy and visual appeal
+
+# Subtasks:
+## 1. List main IT solution services [pending]
+### Dependencies: None
+### Description: Create comprehensive list of all service offerings
+### Details:
+Define and organize all IT services provided by Ubetanation
+
+## 2. Design service cards with animations [pending]
+### Dependencies: None
+### Description: Create modern service cards with icons and light animations
+### Details:
+Use Framer Motion for smooth animations and modern icons
+

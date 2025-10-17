@@ -1,0 +1,31 @@
+# Task ID: 10
+# Title: Admin Dashboard - Core Interface
+# Status: pending
+# Dependencies: 3
+# Priority: high
+# Description: Build main admin dashboard with navigation and overview statistics
+# Details:
+Create admin dashboard foundation with authentication protection
+
+# Test Strategy:
+Test dashboard access control and statistics display
+
+# Subtasks:
+## 1. Create dashboard layout and navigation [pending]
+### Dependencies: None
+### Description: Build admin dashboard layout with navigation menu
+### Details:
+Design responsive admin interface with sidebar navigation
+
+## 2. Add overview statistics [pending]
+### Dependencies: None
+### Description: Display quick stats for total views, projects, and blog posts
+### Details:
+Create dashboard widgets showing key metrics
+
+## 3. Implement protected routes [pending]
+### Dependencies: None
+### Description: Ensure all admin pages require authentication
+### Details:
+Add authentication middleware to all admin routes
+

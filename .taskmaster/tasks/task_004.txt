@@ -1,0 +1,37 @@
+# Task ID: 4
+# Title: Public Website - Home Page
+# Status: pending
+# Dependencies: 1
+# Priority: medium
+# Description: Create the main landing page with hero section, services overview, and portfolio highlights
+# Details:
+Build engaging home page with 3D elements, animations, and clear call-to-actions
+
+# Test Strategy:
+Test responsiveness, animations, and performance on different devices
+
+# Subtasks:
+## 1. Create hero section with 3D elements [pending]
+### Dependencies: None
+### Description: Build hero section with subtle 3D animations (globe mesh or abstract waves)
+### Details:
+Use React Three Fiber or Lottie for 3D elements, ensure performance optimization
+
+## 2. Add services overview section [pending]
+### Dependencies: None
+### Description: Display key IT solution services with modern design
+### Details:
+Create service cards with icons and brief descriptions
+
+## 3. Implement portfolio highlights [pending]
+### Dependencies: None
+### Description: Show recent/featured portfolio projects
+### Details:
+Create portfolio preview section with link to full portfolio page
+
+## 4. Add call-to-action elements [pending]
+### Dependencies: None
+### Description: Include Contact Us button and other conversion elements
+### Details:
+Design and position CTA buttons for maximum conversion
+

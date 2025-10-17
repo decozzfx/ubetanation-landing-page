@@ -1,0 +1,880 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Project Setup & Foundation",
+        "description": "Set up the basic Next.js 15 project structure with TypeScript, TailwindCSS, and essential configuration",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [],
+        "details": "Initialize Next.js 15 project with App Router, configure TypeScript, TailwindCSS, shadcn/ui, and basic project structure",
+        "testStrategy": "Verify build and dev server start successfully",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Initialize Next.js project with TypeScript",
+            "description": "Create new Next.js 15 project with App Router and TypeScript",
+            "status": "done",
+            "details": "Use create-next-app with latest Next.js 15 and TypeScript template"
+          },
+          {
+            "id": 2,
+            "title": "Configure TailwindCSS and shadcn/ui",
+            "description": "Install and configure TailwindCSS with shadcn/ui component library",
+            "status": "done",
+            "details": "Set up TailwindCSS, install shadcn/ui CLI, and configure base components"
+          },
+          {
+            "id": 3,
+            "title": "Set up project structure and configuration",
+            "description": "Create folder structure, configure ESLint, Prettier, and other development tools",
+            "status": "done",
+            "details": "Organize components, lib, types folders and configure development environment"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Database & Data Layer Setup",
+        "description": "Configure SQLite database with Prisma ORM and define data schemas",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "1"
+        ],
+        "details": "Set up SQLite database with Prisma for projects, blog posts, and admin authentication",
+        "testStrategy": "Test database connections and basic CRUD operations",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Install and configure Prisma with SQLite",
+            "description": "Set up Prisma ORM with SQLite database",
+            "status": "done",
+            "details": "Install Prisma, configure SQLite provider, and set up database connection"
+          },
+          {
+            "id": 2,
+            "title": "Define database schemas",
+            "description": "Create Prisma schemas for User, Project, BlogPost, and Analytics models",
+            "status": "done",
+            "details": "Define all database models with proper relationships and field types"
+          },
+          {
+            "id": 3,
+            "title": "Set up database migrations and seeding",
+            "description": "Create initial migrations and seed data for development",
+            "status": "done",
+            "details": "Generate migrations, create seed script with sample data"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Authentication System",
+        "description": "Implement secure admin authentication with bcrypt password hashing and session management",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "2"
+        ],
+        "details": "Build secure login system for admin dashboard with session-based authentication",
+        "testStrategy": "Test login/logout flow, password hashing, and session security",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set up bcrypt password hashing",
+            "description": "Install bcrypt and create password hashing utilities",
+            "status": "done",
+            "details": "Install bcrypt, create hash and verify utility functions"
+          },
+          {
+            "id": 2,
+            "title": "Implement session-based authentication",
+            "description": "Create session management with secure cookies",
+            "status": "done",
+            "details": "Set up session middleware, cookie configuration, and auth guards"
+          },
+          {
+            "id": 3,
+            "title": "Build login/logout API endpoints",
+            "description": "Create API routes for authentication operations",
+            "status": "done",
+            "details": "Implement POST /api/auth/login and POST /api/auth/logout endpoints"
+          },
+          {
+            "id": 4,
+            "title": "Create login page UI",
+            "description": "Build responsive login form with proper validation",
+            "status": "done",
+            "details": "Design and implement admin login page with form validation"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Public Website - Home Page",
+        "description": "Create the main landing page with hero section, services overview, and portfolio highlights",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "details": "Build engaging home page with 3D elements, animations, and clear call-to-actions",
+        "testStrategy": "Test responsiveness, animations, and performance on different devices",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create hero section with 3D elements",
+            "description": "Build hero section with subtle 3D animations (globe mesh or abstract waves)",
+            "status": "done",
+            "details": "Use React Three Fiber or Lottie for 3D elements, ensure performance optimization"
+          },
+          {
+            "id": 2,
+            "title": "Add services overview section",
+            "description": "Display key IT solution services with modern design",
+            "status": "done",
+            "details": "Create service cards with icons and brief descriptions"
+          },
+          {
+            "id": 3,
+            "title": "Implement portfolio highlights",
+            "description": "Show recent/featured portfolio projects",
+            "status": "done",
+            "details": "Create portfolio preview section with link to full portfolio page"
+          },
+          {
+            "id": 4,
+            "title": "Add call-to-action elements",
+            "description": "Include Contact Us button and other conversion elements",
+            "status": "done",
+            "details": "Design and position CTA buttons for maximum conversion"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Public Website - About Page",
+        "description": "Build comprehensive about page showcasing company information, mission, and values",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "details": "Create engaging about page that builds trust and credibility",
+        "testStrategy": "Review content presentation and mobile responsiveness",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create company introduction section",
+            "description": "Write and design company overview and history",
+            "status": "done",
+            "details": "Develop compelling company story and background information"
+          },
+          {
+            "id": 2,
+            "title": "Add vision and mission statements",
+            "description": "Display company vision, mission, and core objectives",
+            "status": "done",
+            "details": "Create visually appealing sections for vision and mission content"
+          },
+          {
+            "id": 3,
+            "title": "Showcase values and differentiators",
+            "description": "Highlight what makes Ubetanation unique in the market",
+            "status": "done",
+            "details": "Design value propositions and competitive advantages section"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Public Website - Services Page",
+        "description": "Create detailed services page listing all IT solution offerings",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "details": "Build comprehensive services page with modern design and animations",
+        "testStrategy": "Verify service information accuracy and visual appeal",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "List main IT solution services",
+            "description": "Create comprehensive list of all service offerings",
+            "status": "done",
+            "details": "Define and organize all IT services provided by Ubetanation"
+          },
+          {
+            "id": 2,
+            "title": "Design service cards with animations",
+            "description": "Create modern service cards with icons and light animations",
+            "status": "done",
+            "details": "Use Framer Motion for smooth animations and modern icons"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Public Website - Portfolio Page",
+        "description": "Build portfolio showcase with project filtering and detailed project pages",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "2"
+        ],
+        "details": "Create dynamic portfolio system connected to database with filtering capabilities",
+        "testStrategy": "Test filtering functionality and project detail pages",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create project grid with filtering",
+            "description": "Build portfolio grid with technology and category filters",
+            "status": "done",
+            "details": "Implement dynamic filtering system for portfolio projects"
+          },
+          {
+            "id": 2,
+            "title": "Build project detail pages",
+            "description": "Create individual project pages with goals, challenges, solutions, results",
+            "status": "done",
+            "details": "Design comprehensive project case studies with image galleries"
+          },
+          {
+            "id": 3,
+            "title": "Implement image gallery system",
+            "description": "Create multi-image gallery for project screenshots",
+            "status": "done",
+            "details": "Build responsive image gallery with lightbox functionality"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Public Website - Blog System",
+        "description": "Create blog listing and detail pages with SEO optimization",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "2"
+        ],
+        "details": "Build complete blog system with markdown support and SEO features",
+        "testStrategy": "Test blog functionality, SEO tags, and social sharing",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Build blog listing page",
+            "description": "Create blog index with images, titles, and excerpts",
+            "status": "done",
+            "details": "Design blog listing with pagination and filtering options"
+          },
+          {
+            "id": 2,
+            "title": "Create blog detail pages",
+            "description": "Build individual blog post pages with markdown support",
+            "status": "done",
+            "details": "Implement markdown rendering, SEO optimization, and social sharing"
+          },
+          {
+            "id": 3,
+            "title": "Add SEO and social sharing",
+            "description": "Implement meta tags, structured data, and social sharing buttons",
+            "status": "done",
+            "details": "Configure Next.js metadata API and social sharing functionality"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Public Website - Contact Page",
+        "description": "Build contact page with form, company information, and optional map",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "1"
+        ],
+        "details": "Create comprehensive contact page with functional contact form",
+        "testStrategy": "Test contact form submission and validation",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create contact form",
+            "description": "Build contact form with name, email, and message fields",
+            "status": "done",
+            "details": "Implement form validation and submission handling"
+          },
+          {
+            "id": 2,
+            "title": "Add company contact information",
+            "description": "Display address, phone, and email information",
+            "status": "done",
+            "details": "Create attractive company information display"
+          },
+          {
+            "id": 3,
+            "title": "Optional embedded map integration",
+            "description": "Add Google Maps or alternative map service",
+            "status": "done",
+            "details": "Integrate map service showing company location"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Admin Dashboard - Core Interface",
+        "description": "Build main admin dashboard with navigation and overview statistics",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "3"
+        ],
+        "details": "Create admin dashboard foundation with authentication protection",
+        "testStrategy": "Test dashboard access control and statistics display",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create dashboard layout and navigation",
+            "description": "Build admin dashboard layout with navigation menu",
+            "status": "done",
+            "details": "Design responsive admin interface with sidebar navigation"
+          },
+          {
+            "id": 2,
+            "title": "Add overview statistics",
+            "description": "Display quick stats for total views, projects, and blog posts",
+            "status": "done",
+            "details": "Create dashboard widgets showing key metrics"
+          },
+          {
+            "id": 3,
+            "title": "Implement protected routes",
+            "description": "Ensure all admin pages require authentication",
+            "status": "done",
+            "details": "Add authentication middleware to all admin routes"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Admin Dashboard - Projects CRUD",
+        "description": "Build complete project management system with file uploads",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "10"
+        ],
+        "details": "Create full CRUD functionality for portfolio projects",
+        "testStrategy": "Test all CRUD operations and file upload functionality",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create project listing interface",
+            "description": "Build admin interface to view all projects",
+            "status": "done",
+            "details": "Display projects in table/card format with action buttons"
+          },
+          {
+            "id": 2,
+            "title": "Build project creation form",
+            "description": "Create form for adding new projects with all required fields",
+            "status": "done",
+            "details": "Include title, client, description, technologies, demo/repo links"
+          },
+          {
+            "id": 3,
+            "title": "Implement project editing",
+            "description": "Add ability to edit existing projects",
+            "status": "done",
+            "details": "Create edit form with pre-populated data"
+          },
+          {
+            "id": 4,
+            "title": "Add image upload functionality",
+            "description": "Implement cover image and gallery image uploads",
+            "status": "done",
+            "details": "Use Sharp for image resizing and optimization"
+          },
+          {
+            "id": 5,
+            "title": "Implement project deletion",
+            "description": "Add ability to delete projects with confirmation",
+            "status": "done",
+            "details": "Include soft delete option and confirmation dialogs"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Admin Dashboard - Blog CRUD",
+        "description": "Build complete blog post management system with markdown support",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "10"
+        ],
+        "details": "Create full CRUD functionality for blog posts with markdown editor",
+        "testStrategy": "Test markdown rendering, draft/publish functionality, and CRUD operations",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create blog post listing interface",
+            "description": "Build admin interface to view all blog posts",
+            "status": "done",
+            "details": "Show posts with status, dates, and action buttons"
+          },
+          {
+            "id": 2,
+            "title": "Build markdown editor for blog posts",
+            "description": "Implement markdown editor with preview functionality",
+            "status": "done",
+            "details": "Use markdown editor component with live preview"
+          },
+          {
+            "id": 3,
+            "title": "Add draft/publish status toggle",
+            "description": "Implement status management for blog posts",
+            "status": "done",
+            "details": "Allow switching between draft and published states"
+          },
+          {
+            "id": 4,
+            "title": "Implement blog cover image upload",
+            "description": "Add cover image upload functionality for blog posts",
+            "status": "done",
+            "details": "Include image upload and optimization for blog covers"
+          },
+          {
+            "id": 5,
+            "title": "Add tagging system",
+            "description": "Implement tag management for blog posts",
+            "status": "done",
+            "details": "Create tag input system and tag management interface"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "title": "Analytics Integration",
+        "description": "Implement basic analytics tracking and admin dashboard display",
+        "status": "done",
+        "priority": "low",
+        "dependencies": [
+          "10"
+        ],
+        "details": "Add page view tracking and analytics dashboard for admin users",
+        "testStrategy": "Test analytics data collection and dashboard display",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement page view tracking",
+            "description": "Add client-side page view tracking",
+            "status": "done",
+            "details": "Track page views without external dependencies"
+          },
+          {
+            "id": 2,
+            "title": "Create analytics dashboard",
+            "description": "Build admin interface showing analytics data",
+            "status": "done",
+            "details": "Display pageviews by day (7/30/90 days) and top pages"
+          },
+          {
+            "id": 3,
+            "title": "Add referrer and geographic data",
+            "description": "Track referrer sources and basic geographic information",
+            "status": "done",
+            "details": "Implement referrer tracking and country-level geographic data"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "title": "Animations and 3D Elements",
+        "description": "Add smooth animations and lightweight 3D elements throughout the site",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "details": "Enhance user experience with Framer Motion and React Three Fiber",
+        "testStrategy": "Test animation performance across devices and ensure accessibility",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set up Framer Motion for page transitions",
+            "description": "Implement smooth page transitions and scroll animations",
+            "status": "done",
+            "details": "Add page transitions and scroll-triggered animations"
+          },
+          {
+            "id": 2,
+            "title": "Add React Three Fiber 3D elements",
+            "description": "Implement lightweight 3D elements for hero section",
+            "status": "done",
+            "details": "Create optimized 3D globe or abstract wave animations"
+          },
+          {
+            "id": 3,
+            "title": "Implement Lottie animations",
+            "description": "Add Lottie animations for service icons and interactions",
+            "status": "done",
+            "details": "Create or integrate Lottie animations for enhanced UX"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "title": "SEO Optimization",
+        "description": "Implement comprehensive SEO features using Next.js 15 capabilities",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "details": "Optimize for search engines with metadata, sitemaps, and structured data",
+        "testStrategy": "Test SEO scores using Lighthouse and other SEO tools",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Next.js metadata API",
+            "description": "Set up dynamic meta tags for all pages",
+            "status": "done",
+            "details": "Use Next.js 15 metadata API for SEO optimization"
+          },
+          {
+            "id": 2,
+            "title": "Generate XML sitemaps",
+            "description": "Create dynamic sitemaps for better search engine crawling",
+            "status": "done",
+            "details": "Implement sitemap.xml generation for all pages"
+          },
+          {
+            "id": 3,
+            "title": "Add structured data markup",
+            "description": "Implement JSON-LD structured data for rich snippets",
+            "status": "done",
+            "details": "Add organization, service, and article structured data"
+          },
+          {
+            "id": 4,
+            "title": "Optimize images and performance",
+            "description": "Implement Next.js Image optimization and performance best practices",
+            "status": "done",
+            "details": "Use Next.js Image component and optimize Core Web Vitals"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "title": "File System Storage",
+        "description": "Implement secure file upload and storage system",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "11",
+          "12"
+        ],
+        "details": "Set up VPS file system storage with Sharp for image processing",
+        "testStrategy": "Test file upload, resizing, and security measures",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure Sharp for image processing",
+            "description": "Set up Sharp library for image resizing and optimization",
+            "status": "done",
+            "details": "Install and configure Sharp with multiple size variants"
+          },
+          {
+            "id": 2,
+            "title": "Implement secure file upload API",
+            "description": "Create secure file upload endpoints with validation",
+            "status": "done",
+            "details": "Add file type validation, size limits, and security checks"
+          },
+          {
+            "id": 3,
+            "title": "Set up file organization structure",
+            "description": "Organize uploaded files in logical directory structure",
+            "status": "done",
+            "details": "Create organized folder structure for different file types"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "title": "Security Implementation",
+        "description": "Implement comprehensive security measures throughout the application",
+        "status": "done",
+        "priority": "high",
+        "dependencies": [
+          "3",
+          "11",
+          "12"
+        ],
+        "details": "Add CSRF protection, rate limiting, and other security features",
+        "testStrategy": "Conduct security testing and vulnerability assessment",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Implement CSRF protection",
+            "description": "Add CSRF tokens to forms and API endpoints",
+            "status": "done",
+            "details": "Use next-csrf or similar library for CSRF protection"
+          },
+          {
+            "id": 2,
+            "title": "Add rate limiting",
+            "description": "Implement rate limiting for API endpoints",
+            "status": "done",
+            "details": "Add rate limiting middleware to prevent abuse"
+          },
+          {
+            "id": 3,
+            "title": "Secure headers and middleware",
+            "description": "Add security headers and middleware",
+            "status": "done",
+            "details": "Implement security headers and request validation"
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "Deployment Pipeline Setup",
+        "description": "Configure GitHub Actions CI/CD pipeline for VPS deployment",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "15",
+          "16",
+          "17"
+        ],
+        "details": "Set up automated deployment to Ubuntu VPS with Nginx and PM2",
+        "testStrategy": "Test deployment pipeline and rollback procedures",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Configure GitHub Actions workflow",
+            "description": "Set up CI/CD pipeline with build, test, and deploy stages",
+            "status": "done",
+            "details": "Create GitHub Actions workflow for automated deployment"
+          },
+          {
+            "id": 2,
+            "title": "Set up VPS environment",
+            "description": "Configure Ubuntu VPS with Nginx, Node.js, and PM2",
+            "status": "done",
+            "details": "Prepare production server environment"
+          },
+          {
+            "id": 3,
+            "title": "Configure Nginx reverse proxy",
+            "description": "Set up Nginx configuration for the Next.js application",
+            "status": "done",
+            "details": "Configure Nginx with SSL and proper caching headers"
+          },
+          {
+            "id": 4,
+            "title": "Implement PM2 process management",
+            "description": "Configure PM2 for application process management",
+            "status": "done",
+            "details": "Set up PM2 with clustering and monitoring"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "Testing & Quality Assurance",
+        "description": "Implement comprehensive testing strategy and quality assurance",
+        "status": "done",
+        "priority": "medium",
+        "dependencies": [
+          "14",
+          "15"
+        ],
+        "details": "Add unit tests, integration tests, and performance testing",
+        "testStrategy": "Achieve >90% test coverage and Lighthouse score ≥90",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Set up testing framework",
+            "description": "Configure Jest and React Testing Library",
+            "status": "done",
+            "details": "Set up comprehensive testing environment"
+          },
+          {
+            "id": 2,
+            "title": "Write unit tests for components",
+            "description": "Create unit tests for all major components",
+            "status": "done",
+            "details": "Test component functionality and edge cases"
+          },
+          {
+            "id": 3,
+            "title": "Add integration tests",
+            "description": "Test API endpoints and database operations",
+            "status": "done",
+            "details": "Create integration tests for critical user flows"
+          },
+          {
+            "id": 4,
+            "title": "Performance testing and optimization",
+            "description": "Test and optimize for Lighthouse score ≥90",
+            "status": "done",
+            "details": "Run performance audits and implement optimizations"
+          },
+          {
+            "id": 5,
+            "title": "Accessibility compliance testing",
+            "description": "Ensure WCAG 2.1 AA compliance",
+            "status": "done",
+            "details": "Test with screen readers and accessibility tools"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "Content & Launch Preparation",
+        "description": "Prepare content, branding, and final launch activities",
+        "status": "done",
+        "priority": "low",
+        "dependencies": [
+          "18",
+          "19"
+        ],
+        "details": "Finalize content, branding elements, and launch preparation",
+        "testStrategy": "Review all content and conduct final pre-launch testing",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Finalize branding elements",
+            "description": "Complete logo, colors, and typography decisions",
+            "status": "done",
+            "details": "Ensure consistent branding across all pages"
+          },
+          {
+            "id": 2,
+            "title": "Create company content",
+            "description": "Develop content schema (company.yaml, services.yaml)",
+            "status": "done",
+            "details": "Create structured content files for easy maintenance"
+          },
+          {
+            "id": 3,
+            "title": "SEO content optimization",
+            "description": "Optimize all content for target keywords",
+            "status": "done",
+            "details": "Research and implement IT solutions keywords"
+          },
+          {
+            "id": 4,
+            "title": "Final pre-launch testing",
+            "description": "Comprehensive testing across all devices and browsers",
+            "status": "done",
+            "details": "Complete cross-browser and device testing"
+          },
+          {
+            "id": 5,
+            "title": "Launch preparation and monitoring",
+            "description": "Prepare monitoring and launch checklist",
+            "status": "done",
+            "details": "Set up monitoring tools and launch procedures"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "title": "Production Deployment Instructions for Ubetanation Landing Page",
+        "description": "Create comprehensive, step-by-step instructions for the production deployment of the Ubetanation landing page, covering server setup, environment configuration, SSL, domain setup, monitoring, and post-deployment verification.",
+        "details": "Develop a detailed guide for deploying the Ubetanation landing page to a production environment. The instructions should cover:\n\n1.  **Server Provisioning & Initial Setup**:\n    *   Guidance on selecting a cloud provider (e.g., AWS EC2, DigitalOcean, Vultr) and OS (Ubuntu Server LTS).\n    *   Steps for initial server security: SSH key access, UFW firewall configuration, creating a non-root user, disabling root login.\n\n2.  **Prerequisites Installation**:\n    *   Installation of Node.js (via NVM recommended) and npm/yarn.\n    *   Installation and basic configuration of Nginx web server.\n    *   Installation of PM2 process manager.\n    *   Installation of Git for repository cloning.\n\n3.  **Application Deployment**:\n    *   Cloning the Ubetanation landing page repository to the server.\n    *   Installing project dependencies (`npm install` or `yarn install`).\n    *   Building the application for production (`npm run build` or `yarn build`).\n    *   Configuring environment variables (e.g., `.env` file, system-wide).\n\n4.  **Nginx Configuration**:\n    *   Creating a new Nginx server block configuration for the domain.\n    *   Configuring Nginx to serve static files from the application's build directory.\n    *   Implementing Gzip compression and appropriate caching headers.\n    *   Testing Nginx configuration and restarting the service.\n\n5.  **SSL Certificate Setup (Let's Encrypt)**:\n    *   Installation of Certbot.\n    *   Obtaining and installing an SSL certificate using Certbot with the Nginx plugin.\n    *   Configuring automatic renewal for SSL certificates.\n\n6.  **Domain Name System (DNS) Configuration**:\n    *   Instructions for updating DNS A/AAAA records at the domain registrar to point to the server's IP address.\n    *   Guidance on CNAME records if necessary (e.g., for `www`).\n\n7.  **Process Management (PM2)**:\n    *   Configuring PM2 to manage the application process (e.g., starting a static server or the build process).\n    *   Setting up PM2 to start on boot (`pm2 startup`).\n    *   Saving the PM2 process list (`pm2 save`).\n\n8.  **Monitoring and Logging**:\n    *   Recommendations for basic server resource monitoring tools (e.g., `htop`, `glances`).\n    *   Configuration of Nginx access and error logs.\n    *   Guidance on application-specific logging.\n    *   Consideration of external monitoring tools for availability.\n\n9.  **Security Best Practices**:\n    *   Emphasize regular system updates, strong authentication, minimized open ports, and regular backups.",
+        "testStrategy": "To ensure the deployment instructions are robust and accurate:\n\n1.  **Documentation Review**: Have a separate developer review the entire set of instructions for clarity, completeness, and technical accuracy.\n2.  **Staging Environment Deployment**: Execute the instructions step-by-step on a dedicated staging server that mirrors the production environment. Document any issues encountered and refine the instructions accordingly.\n3.  **Accessibility Verification**: After deployment, verify the landing page is fully accessible via the configured domain (both HTTP and HTTPS) from various devices and browsers.\n4.  **Functionality Testing**: Thoroughly test all interactive elements, navigation, and content on the deployed landing page to ensure everything works as expected.\n5.  **Performance Audit**: Use tools like Google Lighthouse or PageSpeed Insights to assess loading times, performance metrics, and ensure Gzip compression and caching are active.\n6.  **SSL Validation**: Confirm the site loads securely with HTTPS, verify the SSL certificate's validity, and ensure automatic renewal is correctly configured.\n7.  **Monitoring Confirmation**: Check that Nginx logs are being generated, server resources are being monitored, and the application processes managed by PM2 restart correctly after a simulated server reboot.\n8.  **Rollback Plan**: Ensure the instructions include or reference a clear rollback strategy in case of deployment failure.",
+        "status": "done",
+        "dependencies": [
+          4,
+          18
+        ],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 22,
+        "title": "Landing Page Content Revision and Optimization",
+        "description": "Revise and optimize the Ubetanation landing page content, including wording, section relevance, and overall messaging alignment.",
+        "details": "Conduct a comprehensive audit of the existing Ubetanation landing page content. Review each section for clarity, conciseness, and impact, focusing on improving the 'persection' wording. Identify and rewrite or rephrase sections for enhanced readability and user engagement. Evaluate the relevance of each section to the core message and user journey; remove or replace sections that do not contribute effectively to the landing page's goals. Ensure the revised content aligns with the original vision, brand voice, and marketing objectives for the Ubetanation landing page, referencing earlier content briefs, design mockups, or brand guidelines to capture the intended essence. Optimize content for SEO where appropriate, without compromising readability. Collaborate with marketing and design teams to ensure content fits design constraints and visual hierarchy.",
+        "testStrategy": "Perform a thorough internal review by at least two team members (e.g., marketing specialist, product owner) for accuracy, tone, and adherence to brand guidelines. Obtain final approval from key stakeholders (e.g., project lead, client) on the revised content. Conduct readability score checks using appropriate tools to ensure content meets target comprehension levels. Verify that the new content displays correctly and is legible across various devices and screen sizes, ensuring responsiveness.",
+        "status": "done",
+        "dependencies": [
+          20
+        ],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 23,
+        "title": "Ubetanation Landing Page Redesign & Dynamic Portfolio Integration",
+        "description": "Revamp the Ubetanation landing page with a new navigation system, updated hero section, dynamic portfolio integration, and enhanced visual design.",
+        "details": "Implement a comprehensive redesign of the Ubetanation landing page. This includes:\n\n1.  **Navbar with Smooth Scrolling:** Develop a responsive navigation bar that provides smooth scrolling functionality to various sections of the landing page. Utilize `scroll-behavior: smooth` or a suitable JavaScript library/hook (e.g., `react-scroll` or custom Intersection Observer) for an optimal user experience. Ensure navigation links accurately target their respective sections.\n2.  **Hero Section Update:** Change the main hero title to 'Ubetanation'. Replace the existing hero background image with the specified `/hero-image.jpg`. Ensure the image is optimized for web performance and responsiveness across devices.\n3.  **Smooth Scrolling and Animations:** Apply smooth scrolling effects throughout the page. Leverage the existing animation framework (Framer Motion from Task 14) to add subtle, performant animations to elements as they enter the viewport or on user interaction, enhancing the overall user experience.\n4.  **Dynamic Portfolio Integration:** Remove the 'service packages' section entirely. Replace it with a new 'Portfolio Projects' section. This section must fetch project data dynamically from the API established by Task 11. Display projects in an engaging layout (e.g., grid, carousel) and ensure each project item links correctly to its detailed page (as per Task 7).\n5.  **Colorful Sections:** Assign distinct and harmonious background colors or color schemes to each major section of the landing page to create visual separation, improve readability, and enhance aesthetic appeal. Ensure all color choices adhere to accessibility standards (WCAG 2.1 AA contrast ratios).",
+        "testStrategy": "1.  **Functional Verification:**\n    *   Confirm the new navbar is responsive and all navigation links correctly scroll to their respective sections smoothly.\n    *   Verify the hero title is 'Ubetanation' and the `/hero-image.jpg` is correctly displayed and responsive.\n    *   Ensure the 'service packages' section has been completely removed.\n    *   Validate that the 'Portfolio Projects' section correctly fetches and displays projects from the API.\n    *   Test that clicking on a portfolio project navigates to its correct detailed page.\n2.  **Visual & UI/UX Review:**\n    *   Assess the visual appeal and consistency of the new section colors and overall design.\n    *   Check color contrast ratios for accessibility across all new sections.\n    *   Evaluate the smoothness and performance of all implemented animations across different browsers and devices.\n    *   Ensure the overall layout remains responsive and visually appealing on various screen sizes.\n3.  **Performance Testing:**\n    *   Monitor page load times and animation frame rates to ensure optimal performance and a smooth user experience.",
+        "status": "done",
+        "dependencies": [
+          1,
+          7,
+          11,
+          14,
+          22
+        ],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 24,
+        "title": "Dynamic Content Integration for Landing Page",
+        "description": "Fetch and display real-time data from existing APIs for projects, blog posts, and other dynamic content sections on the landing page, replacing all static placeholders.",
+        "details": "This task involves integrating live data from backend APIs into the Ubetanation landing page to replace all static placeholder content. The primary focus will be on the projects/portfolio section and a new or existing blog posts/news section, but should be extensible to other dynamic content as identified.\n\n**Implementation Steps:**\n1.  **API Identification & Endpoint Mapping:** Collaborate with backend team (if applicable) to identify and confirm the specific API endpoints for fetching project data (from Task 11's CRUD system) and blog post data. Define the expected data structure for each.\n2.  **Data Fetching Strategy:** Implement robust data fetching mechanisms for Next.js. Prioritize Server-Side Rendering (SSR) or Static Site Generation (SSG) with `revalidate` for initial page load performance and SEO benefits for critical sections like projects and blog posts. For less critical or interactive elements, client-side fetching with libraries like SWR or React Query can be considered.\n3.  **Component Adaptation:** Modify existing landing page components (e.g., portfolio display components from Task 23, or create new ones for blog posts) to accept and render dynamic data instead of static props or mock data.\n4.  **Placeholder Replacement:** Systematically replace all static placeholder content within the designated sections of the landing page (e.g., project cards, blog post summaries, testimonials) with data fetched from the APIs.\n5.  **Loading States & Error Handling:** Implement clear loading indicators for sections while data is being fetched and user-friendly error messages or fallback content for scenarios where API calls fail or return empty data.\n6.  **Data Transformation & Caching:** If necessary, implement data transformation logic to map API responses to the UI's expected data format. Configure appropriate caching strategies (e.g., `stale-while-revalidate` for SSG, or HTTP caching headers) to optimize performance and reduce API load.\n7.  **Responsiveness & Accessibility:** Ensure that the dynamically rendered content maintains responsiveness across various devices and adheres to accessibility best practices.\n8.  **Security Considerations:** Ensure API keys (if any) are handled securely and that data fetching does not expose sensitive information.",
+        "testStrategy": "1.  **Functional Verification:**\n    *   Verify that all designated sections (e.g., projects, blog posts) on the landing page display actual data fetched from the respective APIs, not static placeholders.\n    *   Confirm that the displayed data (e.g., project titles, descriptions, images, blog post excerpts, dates) accurately matches the data returned by the APIs.\n    *   Test loading states: Observe that appropriate loading indicators are shown while data is being fetched.\n    *   Test error handling: Simulate API failures or empty responses to ensure graceful degradation and display of user-friendly error messages or fallback content.\n    *   Verify data updates: If revalidation is implemented, confirm that content updates correctly after a specified interval or on demand.\n2.  **Performance Testing:**\n    *   Measure page load times (e.g., using Lighthouse or browser developer tools) to ensure dynamic data integration does not negatively impact performance. Focus on Largest Contentful Paint (LCP) and First Input Delay (FID).\n    *   Monitor network requests to confirm efficient data fetching and caching mechanisms are in place.\n3.  **Responsiveness & UI/UX:**\n    *   Check the display of dynamic content across various screen sizes and devices to ensure responsiveness and correct layout.\n    *   Verify that the user experience remains smooth with dynamic content, including smooth scrolling and interactive elements.\n4.  **Data Integrity & Security:**\n    *   Cross-reference displayed data with direct API responses to ensure data integrity and accuracy.\n    *   Conduct basic security checks to ensure no sensitive API information is exposed client-side.",
+        "status": "done",
+        "dependencies": [
+          1,
+          4,
+          11,
+          23
+        ],
+        "priority": "medium",
+        "subtasks": []
+      },
+      {
+        "id": 25,
+        "title": "TypeScript Type Error Resolution & Strict Mode Enforcement",
+        "description": "Systematically identify and resolve all TypeScript type errors across the entire project, including components, API routes, and utility files, aiming for a clean `tsc --noEmit` run.",
+        "details": "This task involves a comprehensive audit and resolution of all existing TypeScript type errors within the project. The primary goal is to achieve a state where `tsc --noEmit` runs successfully without any reported errors, and to ensure type safety across the codebase.\n\n**Implementation Steps:**\n1.  **Review `tsconfig.json`:** Ensure `strict: true` is enabled. If not, enable it and address the new errors that arise. Prioritize `noImplicitAny`, `strictNullChecks`, `noUnusedLocals`, and `noUnusedParameters` if `strict` cannot be fully enabled immediately.\n2.  **Systematic Error Identification:**\n    *   Utilize the IDE (e.g., VS Code) for real-time error highlighting.\n    *   Run `tsc --noEmit` from the terminal to get a comprehensive list of all type errors.\n    *   Prioritize errors based on severity or location (e.g., core utilities, frequently used components).\n3.  **Error Resolution Strategies:**\n    *   **Explicit Typing:** Replace implicit `any` types with explicit, accurate types for variables, function parameters, and return values.\n    *   **Interface/Type Definitions:** Create and apply precise interfaces or type aliases for complex objects, especially for API response data, component props, and state.\n    *   **Null/Undefined Handling:** Implement robust null and undefined checks using optional chaining (`?.`), nullish coalescing (`??`), type guards (`if (value != null)`), or non-null assertions (`!`) judiciously.\n    *   **Generics:** Apply generics to create reusable, type-safe components and functions.\n    *   **Type Assertions:** Use type assertions (`as Type`) sparingly and only when absolutely certain of the type, providing comments for justification.\n    *   **Discriminated Unions:** For handling data with varying shapes based on a common property.\n    *   **Third-Party Libraries:** Install `@types/` packages for any untyped JavaScript libraries or create custom declaration files (`.d.ts`) where necessary.\n4.  **Targeted Areas:**\n    *   **Components:** Define precise `Props` and `State` interfaces, type event handlers, and ensure correct types for hooks (e.g., `useState`, `useReducer`).\n    *   **API Routes:** Define types for request bodies, query parameters, and response data for all API endpoints.\n    *   **Utility Functions:** Ensure all utility functions have clearly defined input and output types.\n    *   **Data Models:** Standardize data models and ensure consistency across the application.\n5.  **Linting Integration:** Ensure `eslint-plugin-typescript` is configured to catch common type-related issues during development.\n6.  **Refactoring:** As type errors are resolved, identify opportunities to refactor code for better type inference and maintainability.",
+        "testStrategy": "1.  **Type Check Verification:** Run `tsc --noEmit` in the project root. This command must complete without any reported type errors.\n2.  **Build Verification:** Execute `next build` to ensure the project compiles successfully without any TypeScript-related warnings or errors.\n3.  **Local Development Server:** Start the development server (`next dev`) and thoroughly navigate through all major sections and functionalities of the application (e.g., landing page, admin dashboard CRUD operations, security features) to ensure no new runtime errors or unexpected behaviors have been introduced due to type changes.\n4.  **Functional Testing:** Perform a quick regression test on key features to confirm that the application's functionality remains intact and correct.\n5.  **Code Review:** Conduct a peer code review focusing specifically on the correctness of type definitions, the appropriate use of type guards, assertions, and generics, and overall adherence to TypeScript best practices.",
+        "status": "pending",
+        "dependencies": [
+          1,
+          11,
+          17,
+          23,
+          24
+        ],
+        "priority": "medium",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-09-25T11:17:29.492Z",
+      "updated": "2025-09-26T01:21:15.034Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+# Task ID: 11
+# Title: Admin Dashboard - Projects CRUD
+# Status: pending
+# Dependencies: 10
+# Priority: high
+# Description: Build complete project management system with file uploads
+# Details:
+Create full CRUD functionality for portfolio projects
+
+# Test Strategy:
+Test all CRUD operations and file upload functionality
+
+# Subtasks:
+## 1. Create project listing interface [pending]
+### Dependencies: None
+### Description: Build admin interface to view all projects
+### Details:
+Display projects in table/card format with action buttons
+
+## 2. Build project creation form [pending]
+### Dependencies: None
+### Description: Create form for adding new projects with all required fields
+### Details:
+Include title, client, description, technologies, demo/repo links
+
+## 3. Implement project editing [pending]
+### Dependencies: None
+### Description: Add ability to edit existing projects
+### Details:
+Create edit form with pre-populated data
+
+## 4. Add image upload functionality [pending]
+### Dependencies: None
+### Description: Implement cover image and gallery image uploads
+### Details:
+Use Sharp for image resizing and optimization
+
+## 5. Implement project deletion [pending]
+### Dependencies: None
+### Description: Add ability to delete projects with confirmation
+### Details:
+Include soft delete option and confirmation dialogs
+

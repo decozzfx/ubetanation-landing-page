@@ -1,0 +1,117 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// User model for admin authentication
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  email     String   @unique
+  password  String   // hashed with bcrypt
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+// Project model for portfolio management
+model Project {
+  id           String   @id @default(cuid())
+  title        String
+  client       String
+  description  String
+  technologies String   // JSON string array
+  demoUrl      String?
+  repoUrl      String?
+  coverImage   String
+  galleryImages String? // JSON string array
+  goals        String?
+  challenges   String?
+  solution     String?
+  results      String?
+  featured     Boolean  @default(false)
+  status       String   @default("published") // published, draft
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("projects")
+}
+
+// BlogPost model for blog management
+model BlogPost {
+  id          String   @id @default(cuid())
+  title       String
+  content     String   // Markdown content
+  excerpt     String
+  coverImage  String?
+  tags        String   // JSON string array
+  status      String   @default("draft") // draft, published
+  slug        String   @unique
+  metaTitle   String?
+  metaDescription String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("blog_posts")
+}
+
+// Analytics model for tracking page views
+model Analytics {
+  id        String   @id @default(cuid())
+  page      String
+  views     Int      @default(1)
+  referrer  String?
+  country   String?
+  userAgent String?
+  ip        String?
+  date      DateTime @default(now())
+
+  @@map("analytics")
+  @@index([page])
+  @@index([date])
+}
+
+// ContactMessage model for contact form submissions
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  status    String   @default("unread") // unread, read, replied
+  createdAt DateTime @default(now())
+
+  @@map("contact_messages")
+  @@index([status])
+  @@index([createdAt])
+}
+
+// Testimonial model for client testimonials management
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  role      String
+  company   String?
+  content   String
+  rating    Int      @default(5) // 1-5 stars
+  avatar    String?  // URL to avatar image or initials
+  featured  Boolean  @default(false)
+  status    String   @default("published") // published, draft
+  order     Int      @default(0) // for ordering testimonials
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("testimonials")
+  @@index([status])
+  @@index([featured])
+  @@index([order])
+}

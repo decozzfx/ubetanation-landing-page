@@ -1,0 +1,43 @@
+# Task ID: 12
+# Title: Admin Dashboard - Blog CRUD
+# Status: pending
+# Dependencies: 10
+# Priority: high
+# Description: Build complete blog post management system with markdown support
+# Details:
+Create full CRUD functionality for blog posts with markdown editor
+
+# Test Strategy:
+Test markdown rendering, draft/publish functionality, and CRUD operations
+
+# Subtasks:
+## 1. Create blog post listing interface [pending]
+### Dependencies: None
+### Description: Build admin interface to view all blog posts
+### Details:
+Show posts with status, dates, and action buttons
+
+## 2. Build markdown editor for blog posts [pending]
+### Dependencies: None
+### Description: Implement markdown editor with preview functionality
+### Details:
+Use markdown editor component with live preview
+
+## 3. Add draft/publish status toggle [pending]
+### Dependencies: None
+### Description: Implement status management for blog posts
+### Details:
+Allow switching between draft and published states
+
+## 4. Implement blog cover image upload [pending]
+### Dependencies: None
+### Description: Add cover image upload functionality for blog posts
+### Details:
+Include image upload and optimization for blog covers
+
+## 5. Add tagging system [pending]
+### Dependencies: None
+### Description: Implement tag management for blog posts
+### Details:
+Create tag input system and tag management interface
+

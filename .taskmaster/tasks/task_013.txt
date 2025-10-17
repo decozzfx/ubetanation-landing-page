@@ -1,0 +1,31 @@
+# Task ID: 13
+# Title: Analytics Integration
+# Status: pending
+# Dependencies: 10
+# Priority: low
+# Description: Implement basic analytics tracking and admin dashboard display
+# Details:
+Add page view tracking and analytics dashboard for admin users
+
+# Test Strategy:
+Test analytics data collection and dashboard display
+
+# Subtasks:
+## 1. Implement page view tracking [pending]
+### Dependencies: None
+### Description: Add client-side page view tracking
+### Details:
+Track page views without external dependencies
+
+## 2. Create analytics dashboard [pending]
+### Dependencies: None
+### Description: Build admin interface showing analytics data
+### Details:
+Display pageviews by day (7/30/90 days) and top pages
+
+## 3. Add referrer and geographic data [pending]
+### Dependencies: None
+### Description: Track referrer sources and basic geographic information
+### Details:
+Implement referrer tracking and country-level geographic data
+

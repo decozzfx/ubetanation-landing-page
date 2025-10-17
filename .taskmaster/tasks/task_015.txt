@@ -1,0 +1,37 @@
+# Task ID: 15
+# Title: SEO Optimization
+# Status: pending
+# Dependencies: 4, 5, 6, 7, 8, 9
+# Priority: medium
+# Description: Implement comprehensive SEO features using Next.js 15 capabilities
+# Details:
+Optimize for search engines with metadata, sitemaps, and structured data
+
+# Test Strategy:
+Test SEO scores using Lighthouse and other SEO tools
+
+# Subtasks:
+## 1. Configure Next.js metadata API [pending]
+### Dependencies: None
+### Description: Set up dynamic meta tags for all pages
+### Details:
+Use Next.js 15 metadata API for SEO optimization
+
+## 2. Generate XML sitemaps [pending]
+### Dependencies: None
+### Description: Create dynamic sitemaps for better search engine crawling
+### Details:
+Implement sitemap.xml generation for all pages
+
+## 3. Add structured data markup [pending]
+### Dependencies: None
+### Description: Implement JSON-LD structured data for rich snippets
+### Details:
+Add organization, service, and article structured data
+
+## 4. Optimize images and performance [pending]
+### Dependencies: None
+### Description: Implement Next.js Image optimization and performance best practices
+### Details:
+Use Next.js Image component and optimize Core Web Vitals
+

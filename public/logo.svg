@@ -1,0 +1,16 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- U symbol with modern design -->
+  <rect x="8" y="8" width="44" height="44" rx="12" fill="url(#gradient0)"/>
+  <path d="M18 20V32C18 36.4183 21.5817 40 26 40C30.4183 40 34 36.4183 34 32V20H38V32C38 38.6274 32.6274 44 26 44C19.3726 44 14 38.6274 14 32V20H18Z" fill="white"/>
+  
+  <!-- Company name -->
+  <text x="65" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="700" fill="url(#gradient0)">ubetanation</text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient0" x1="0" y1="0" x2="200" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#667EEA"/>
+      <stop offset="1" stop-color="#764BA2"/>
+    </linearGradient>
+  </defs>
+</svg>

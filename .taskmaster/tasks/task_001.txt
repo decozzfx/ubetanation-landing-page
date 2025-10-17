@@ -1,0 +1,31 @@
+# Task ID: 1
+# Title: Project Setup & Foundation
+# Status: pending
+# Dependencies: None
+# Priority: high
+# Description: Set up the basic Next.js 15 project structure with TypeScript, TailwindCSS, and essential configuration
+# Details:
+Initialize Next.js 15 project with App Router, configure TypeScript, TailwindCSS, shadcn/ui, and basic project structure
+
+# Test Strategy:
+Verify build and dev server start successfully
+
+# Subtasks:
+## 1. Initialize Next.js project with TypeScript [pending]
+### Dependencies: None
+### Description: Create new Next.js 15 project with App Router and TypeScript
+### Details:
+Use create-next-app with latest Next.js 15 and TypeScript template
+
+## 2. Configure TailwindCSS and shadcn/ui [pending]
+### Dependencies: None
+### Description: Install and configure TailwindCSS with shadcn/ui component library
+### Details:
+Set up TailwindCSS, install shadcn/ui CLI, and configure base components
+
+## 3. Set up project structure and configuration [pending]
+### Dependencies: None
+### Description: Create folder structure, configure ESLint, Prettier, and other development tools
+### Details:
+Organize components, lib, types folders and configure development environment
+

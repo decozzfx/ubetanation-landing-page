@@ -1,0 +1,37 @@
+# Task ID: 18
+# Title: Deployment Pipeline Setup
+# Status: pending
+# Dependencies: 15, 16, 17
+# Priority: medium
+# Description: Configure GitHub Actions CI/CD pipeline for VPS deployment
+# Details:
+Set up automated deployment to Ubuntu VPS with Nginx and PM2
+
+# Test Strategy:
+Test deployment pipeline and rollback procedures
+
+# Subtasks:
+## 1. Configure GitHub Actions workflow [pending]
+### Dependencies: None
+### Description: Set up CI/CD pipeline with build, test, and deploy stages
+### Details:
+Create GitHub Actions workflow for automated deployment
+
+## 2. Set up VPS environment [pending]
+### Dependencies: None
+### Description: Configure Ubuntu VPS with Nginx, Node.js, and PM2
+### Details:
+Prepare production server environment
+
+## 3. Configure Nginx reverse proxy [pending]
+### Dependencies: None
+### Description: Set up Nginx configuration for the Next.js application
+### Details:
+Configure Nginx with SSL and proper caching headers
+
+## 4. Implement PM2 process management [pending]
+### Dependencies: None
+### Description: Configure PM2 for application process management
+### Details:
+Set up PM2 with clustering and monitoring
+

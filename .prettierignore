@@ -1,0 +1,14 @@
+node_modules
+.next
+build
+dist
+*.log
+.env*
+.git
+.taskmaster
+.claude
+.cursor
+.vscode
+.windsurf
+.zed
+*.md

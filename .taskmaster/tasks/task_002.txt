@@ -1,0 +1,31 @@
+# Task ID: 2
+# Title: Database & Data Layer Setup
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Configure SQLite database with Prisma ORM and define data schemas
+# Details:
+Set up SQLite database with Prisma for projects, blog posts, and admin authentication
+
+# Test Strategy:
+Test database connections and basic CRUD operations
+
+# Subtasks:
+## 1. Install and configure Prisma with SQLite [pending]
+### Dependencies: None
+### Description: Set up Prisma ORM with SQLite database
+### Details:
+Install Prisma, configure SQLite provider, and set up database connection
+
+## 2. Define database schemas [pending]
+### Dependencies: None
+### Description: Create Prisma schemas for User, Project, BlogPost, and Analytics models
+### Details:
+Define all database models with proper relationships and field types
+
+## 3. Set up database migrations and seeding [pending]
+### Dependencies: None
+### Description: Create initial migrations and seed data for development
+### Details:
+Generate migrations, create seed script with sample data
+

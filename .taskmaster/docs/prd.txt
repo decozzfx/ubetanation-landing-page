@@ -1,0 +1,178 @@
+Product Requirements Document (PRD) – Ubetanation Company Profile Website
+
+1. Background
+
+Ubetanation is an IT solutions company that needs a modern, simple, and professional company profile website.
+The website must showcase the company identity, services, portfolio, blog, and contact information.
+Additionally, the system should include an admin dashboard for managing content (portfolio & blog) without relying on developers.
+
+2. Product Goals
+
+Provide an official platform to represent Ubetanation's profile, services, and past work.
+
+Deliver a modern, interactive experience with smooth animations and lightweight 3D elements without hurting UX.
+
+Ensure the website is responsive, SEO-friendly, fast, and accessible across all devices.
+
+Enable admins to manage content through a secure dashboard with full CRUD capabilities.
+
+3. Target Users
+
+Potential Clients – looking for Ubetanation's services and capabilities.
+
+Partners & Sponsors – reviewing portfolio and testimonials.
+
+Internal Admins – managing portfolio projects and blog articles.
+
+4. Scope of Work
+4.1 Public Website
+
+Home Page
+
+Hero section with subtle 3D/animated element (e.g., globe mesh, abstract waves).
+
+Services overview.
+
+Highlight of recent portfolio projects.
+
+Call-to-Action button (Contact Us).
+
+About Page
+
+Company introduction.
+
+Vision & Mission.
+
+Values and differentiators.
+
+Services Page
+
+List of main IT solution services.
+
+Service cards with modern icons and light animation.
+
+Portfolio Page
+
+Project grid with filtering options.
+
+Portfolio detail page: goals, challenges, solution, results, gallery (multi-image).
+
+Blog Page
+
+Blog listing with images, titles, and excerpts.
+
+Blog detail page (SEO-optimized, shareable).
+
+Contact Page
+
+Contact form (name, email, message).
+
+Company info (address, phone, email).
+
+Optional embedded map.
+
+4.2 Admin Dashboard
+
+Authentication
+
+Username + password stored securely (hashed, SQLite).
+
+Dashboard Overview
+
+Quick statistics: total views, projects, blog posts.
+
+Projects CRUD
+
+Fields: title, client name, description, technologies, demo/repo link.
+
+File upload: cover image + multiple gallery images.
+
+Blog CRUD
+
+Fields: title, content (Markdown), tags, cover image.
+
+Draft/Publish status toggle.
+
+Analytics View
+
+Pageviews by day (7/30/90).
+
+Top pages and referrers.
+
+Geographic data (country breakdown if available).
+
+5. Key Features
+
+Fully responsive design (desktop, tablet, mobile).
+
+Minimalist & futuristic branding (clean typography, accent colors).
+
+Smooth animations and lightweight 3D elements (React Three Fiber or Lottie).
+
+SEO friendly (Next.js App Router, sitemaps, meta tags, structured data).
+
+High performance (Next.js 15, image optimization, caching).
+
+Secure admin panel with content management.
+
+SQLite database for structured content + file system storage for images.
+
+GitHub CI/CD pipeline to VPS (Ubuntu, Nginx, PM2).
+
+6. Non-Functional Requirements
+
+Performance: Lighthouse performance score ≥ 90.
+
+Accessibility: WCAG 2.1 AA compliance target.
+
+Security: Encrypted passwords, CSRF protection, rate limiting.
+
+Scalability: Database and file structure must allow adding more projects/blog posts without breaking.
+
+Maintainability: Content defined in YAML/Markdown for Task Master AI automation.
+
+7. Tech Stack
+
+Frontend: Next.js 15 (App Router, TypeScript, TailwindCSS, shadcn/ui).
+
+Animations/3D: Framer Motion, Lottie, React Three Fiber.
+
+Database: SQLite + Prisma ORM.
+
+Storage: VPS file system for images (with Sharp for resizing).
+
+Auth: Basic session-based login (bcrypt + cookies).
+
+Deployment: VPS (Ubuntu, Nginx, PM2), GitHub Actions CI/CD.
+
+Automation: Claude Code (content QA), Task Master AI (content pipeline, PDF export).
+
+8. Success Metrics
+
+Time on site ≥ 2 minutes for new visitors.
+
+Bounce rate ≤ 40%.
+
+SEO keyword ranking for IT solutions keywords within 3 months.
+
+At least 5 new inbound inquiries per month via the Contact page.
+
+9. Next Steps
+
+Finalize branding (logo, colors, typography).
+
+Set up Next.js base project with Tailwind & i18n.
+
+Build content schema (company.yaml, services.yaml, i18n).
+
+Implement public site sections.
+
+Develop admin dashboard with CRUD for projects & blog.
+
+Integrate analytics & file system storage.
+
+Add animations & 3D elements.
+
+Configure CI/CD pipeline.
+
+Run QA via Task Master AI before launch.

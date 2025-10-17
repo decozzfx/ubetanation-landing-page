@@ -1,0 +1,68 @@
+# Dependencies
+node_modules
+npm-debug.log*
+
+# Next.js
+.next/
+.vercel
+
+# Production builds
+/build
+/dist
+
+# Environment files
+.env*
+
+# Debug files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+CHANGELOG.md
+
+# CI/CD
+.github/
+
+# Development files
+*.md
+.eslintrc.json
+.prettierrc
+.prettierignore
+
+# Temporary files
+.tmp/
+temp/
+
+# Backup files
+*.backup
+*.bak
+
+# Local development database
+*.db
+*.sqlite
+
+# Lighthouse reports
+lighthouse-reports/
+
+# Task Master
+.taskmaster/

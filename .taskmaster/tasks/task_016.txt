@@ -1,0 +1,31 @@
+# Task ID: 16
+# Title: File System Storage
+# Status: pending
+# Dependencies: 11, 12
+# Priority: medium
+# Description: Implement secure file upload and storage system
+# Details:
+Set up VPS file system storage with Sharp for image processing
+
+# Test Strategy:
+Test file upload, resizing, and security measures
+
+# Subtasks:
+## 1. Configure Sharp for image processing [pending]
+### Dependencies: None
+### Description: Set up Sharp library for image resizing and optimization
+### Details:
+Install and configure Sharp with multiple size variants
+
+## 2. Implement secure file upload API [pending]
+### Dependencies: None
+### Description: Create secure file upload endpoints with validation
+### Details:
+Add file type validation, size limits, and security checks
+
+## 3. Set up file organization structure [pending]
+### Dependencies: None
+### Description: Organize uploaded files in logical directory structure
+### Details:
+Create organized folder structure for different file types
+

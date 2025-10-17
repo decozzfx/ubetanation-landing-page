@@ -1,0 +1,31 @@
+# Task ID: 8
+# Title: Public Website - Blog System
+# Status: pending
+# Dependencies: 2
+# Priority: medium
+# Description: Create blog listing and detail pages with SEO optimization
+# Details:
+Build complete blog system with markdown support and SEO features
+
+# Test Strategy:
+Test blog functionality, SEO tags, and social sharing
+
+# Subtasks:
+## 1. Build blog listing page [pending]
+### Dependencies: None
+### Description: Create blog index with images, titles, and excerpts
+### Details:
+Design blog listing with pagination and filtering options
+
+## 2. Create blog detail pages [pending]
+### Dependencies: None
+### Description: Build individual blog post pages with markdown support
+### Details:
+Implement markdown rendering, SEO optimization, and social sharing
+
+## 3. Add SEO and social sharing [pending]
+### Dependencies: None
+### Description: Implement meta tags, structured data, and social sharing buttons
+### Details:
+Configure Next.js metadata API and social sharing functionality
+
